@@ -10,3 +10,5 @@ declare module "@mui/material/styles/createPalette" {
     tertiary: PaletteColor;
   }
 }
+
+export type { Palette, PaletteColor }
