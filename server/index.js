@@ -11,7 +11,7 @@ import transactionRoutes from "./routes/transaction.js";
 import KPI from './models/KPI.js'
 import Product from "./models/Product.js";
 import Transaction from "./models/Transaction.js";
-import { kpis } from './data/data.js'
+import { kpis, products } from './data/data.js'
 
 dotenv.config()
 const app = express()
@@ -39,5 +39,6 @@ mongoose
 
     // await mongoose.connection.db.dropDatabase() 
     // KPI.insertMany(kpis) 
+    //Product.insertMany(products) 
   })
   .catch(err => console.log(`${err} did not connect`))
